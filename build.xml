@@ -1,0 +1,25 @@
+<project name="itertools-for-java" default="compile" basedir=".">
+	<property name="build" location="classes"/>
+	<target name="clean">
+		<delete dir="${dist}"/>
+	</target>
+	<target name="init" depends="clean">
+		<mkdir dir="${build}"/>
+	</target>
+	<target name="compile" depends="init">
+		<javac srcdir="src" destdir="${build}">
+			<classpath location="${build}"/>
+		</javac>
+	</target>
+	<target name="test" depends="compile">
+		<java classname="algorithms.Compare">
+			<classpath location="${build}"/>
+		</java>
+	</target>
+	<target name="bt" depends="compile">
+		<java classname="algorithms.Backtracking">
+			<arg value="3"/>
+			<classpath location="${build}"/>
+		</java>
+	</target>
+</project>
