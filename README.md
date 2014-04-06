@@ -1,7 +1,7 @@
 itertools-for-java
 ==================
 
-Both Algorithms are searching for the combinations of n different digits
+Both Algorithms are searching for the permutation without repetition of n different digits
 i.e. n=3
 [0, 1, 2]
 [0, 1, 3]
