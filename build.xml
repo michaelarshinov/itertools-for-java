@@ -1,5 +1,7 @@
 <project name="itertools-for-java" default="compile" basedir=".">
 	<property name="build" location="classes"/>
+	<property name="dist" location="release/latest"/>
+	<property name="latest-version" value="0.0.2"/>
 	<target name="clean">
 		<delete dir="${dist}"/>
 	</target>
@@ -21,5 +23,8 @@
 			<arg value="3"/>
 			<classpath location="${build}"/>
 		</java>
+	</target>
+	<target name="jar" depends="compile">
+		<jar destfile="${dist}/itertools-for-java-${latest-version}.jar" basedir="${build}"/>
 	</target>
 </project>
