@@ -1,7 +1,7 @@
 <project name="itertools-for-java" default="compile" basedir=".">
 	<property name="build" location="classes"/>
 	<property name="dist" location="release/latest"/>
-	<property name="latest-version" value="0.0.2"/>
+	<property name="latest-version" value="0.0.3"/>
 	<target name="clean">
 		<delete dir="${dist}"/>
 	</target>
