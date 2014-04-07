@@ -12,9 +12,9 @@ i.e. n=3
 [0, 3, 2]
 ...
 [9, 8, 6]
-[9, 8, 7]
+[9, 8, 7]~~
  
-To compare Backtracking and Linear Algorithms you can run "ant test" in your console (on my machine it works a minute).~~
+~~To compare Backtracking and Linear Algorithms you can run "ant test" in your console (on my machine it works a minute).~~
 
 *ant jar* creates a library and puts it to the *release* folder  
 * Release 0.0.2
@@ -38,11 +38,9 @@ Added *Backtracking.combinations* and *Backtracking.is_sorted* methods
                    Method                       |	                Results 
 ------------------------------------------------|--------------------------------------------------
 permutations(new String[]{"A","B","C","D"}, 2);	| [ A B ,  A C ,  A D ,  B A ,  B C ,  B D ,
-                                                |  C A ,  C B ,  C D ,  D A ,  D B ,  D C ]
-                                                |                                                
+                                                |  C A ,  C B ,  C D ,  D A ,  D B ,  D C ]                                                
 product(new String[]{"A","B","C","D"}, 2);      | [ A A ,  A B ,  A C ,  A D , B A ,  B B ,  B C ,  B D ,
                                                 |   C A ,  C B ,  C C ,  C D , D A ,  D B ,  D C ,  D D ]
-                                                |  
 combinations(new String[]{"A","B","C","D"}, 2); | [ A B ,  A C ,  A D ,  B C ,  B D ,  C D ]
 
 
